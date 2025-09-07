@@ -4,6 +4,9 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #f8f9fa;
   color: #333;
+  background: url('./Forest.jpg') no-repeat center center fixed;
+  animation: bg-zoom 12s ease-in-out infinite alternate;
+   background-size: cover;
 }
 
 header {
@@ -14,7 +17,7 @@ header {
   min-height: 260px;
   background: url('./pexels-njeromin-17720580.jpg') center/cover no-repeat;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  animation: bg-zoom 18s ease-in-out infinite alternate;
+  animation: bg-zoom 16s ease-in-out infinite alternate;
 }
 
 @keyframes bg-zoom {
@@ -271,3 +274,4 @@ footer .highlight {
     font-size: 14px;
   }
 }
+
