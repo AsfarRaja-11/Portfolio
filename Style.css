@@ -1,3 +1,4 @@
+/* -------- Base Styles (Your Code) -------- */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -25,6 +26,7 @@ header {
   display: flex;
   align-items: center;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 .profile img {
@@ -32,7 +34,6 @@ header {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-
   border: 4px solid #0078d7;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
@@ -58,18 +59,17 @@ header {
 nav {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 nav button {
   padding: 14px 32px;
   border: none;
   border-radius: 24px;
-
   background: #0078d7;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
-
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s, transform 0.2s;
 }
@@ -79,14 +79,20 @@ nav button:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
-.about-section {
+/* Sections */
+.about-section,
+.project,
+.experience {
   max-width: 900px;
-  margin: 48px auto 0;
+  margin: 40px auto;
   padding: 36px 32px;
-  background: #0a0a0a;
   border-radius: 18px;
-  color: #fff;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.about-section {
+  background: #0a0a0a;
+  color: #fff;
 }
 
 .about-section h2 {
@@ -94,12 +100,6 @@ nav button:hover {
   font-size: 2rem;
   color: #0078d7;
 }
-
-.about-section p {
-  font-size: 1.15rem;
-  margin-bottom: 28px;
-}
-
 
 .about-details {
   display: flex;
@@ -111,72 +111,20 @@ nav button:hover {
   flex: 1 1 240px;
 }
 
-.about-details h3 {
-  margin-bottom: 10px;
-  color: #005fa3;
-}
-
-.about-details ul {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 1rem;
-  color: #f8f9fa;
-}
-
-.project {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
+.project, .experience {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.project h1 {
-  text-align: center;
-  color: #444;
-}
-
-.project h2 {
-  margin-top: 20px;
-  color: #555;
-}
-
-.project ul {
-  margin-left: 20px;
-}
-
-.project li {
-  margin-bottom: 8px;
-}
-
-
-.experience {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
+.project h1,
 .experience h1 {
   text-align: center;
   color: #444;
 }
 
+.project h2,
 .experience h2 {
   margin-top: 20px;
   color: #555;
-}
-
-.experience ul {
-  margin-left: 20px;
-}
-
-.experience li {
-  margin-bottom: 8px;
 }
 
 .meta {
@@ -190,13 +138,12 @@ nav button:hover {
   color: #444;
 }
 
-
+/* Footer */
 footer {
   background: #222;
   color: #eee;
   padding: 40px 20px;
   text-align: center;
-
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -213,7 +160,6 @@ footer p {
   line-height: 1.5;
 }
 
-
 footer .highlight {
   color: #ffd700;
   font-weight: bold;
@@ -222,7 +168,6 @@ footer .highlight {
 .social-links a {
   margin: 0 10px;
   font-size: 18px;
-
   color: #ffd700;
   text-decoration: none;
   transition: color 0.2s;
@@ -237,7 +182,9 @@ footer .highlight {
   font-size: 14px;
   color: #aaa;
 }
-#scrollBtn{
+
+/* Scroll Button */
+#scrollBtn {
   display: none;
   position: fixed;
   bottom: 50px;
@@ -252,10 +199,75 @@ footer .highlight {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: background 0.3s ease, transform 0.2s ease;
-
 }
 
 #scrollBtn:hover {
   background: #005bb5;
   transform: translateY(-4px);
+}
+
+/* -------- Responsive Layouts -------- */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .about-details {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+    min-height: 200px;
+  }
+
+  .profile img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile-info span {
+    font-size: 1rem;
+  }
+
+  nav button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .about-section,
+  .project,
+  .experience {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }
