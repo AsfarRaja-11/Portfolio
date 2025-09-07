@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="./Script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="./Portfolio img.jpg" alt="Profile Photo" width="60">
+      <div class="profile-info">
+        <h1>Hello, I'm Asfar Raja</h1>
+        <span>Python Full Stack Developer</span>
+      </div>
+    </div>
+    <nav>
+      <button onclick="scrollToSection('home')">Home</button>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('project')">Project</button>
+      <button onclick="scrollToSection('experience')">Experience</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <section id="home" class="home-section">
+    <h2></h2>
+    <p></p>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      Hi I'm Asfar Raja, a passionate Python Full Stack Developer who loves building web applications and learning new technologies. I enjoy solving problems and collaborating with others to create meaningful digital experiences.
+    </p>
+    <div class="about-details">
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>Bachelor of Science in Information Technology<br>
+              National College at Tiruchirapalli, 2022-2025</li>
+          <li>Higher Secondary Education<br>
+              Shri Renuga Vidyalaya Higher Secondary at Theni, 2020-2022</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Course Details</h3>
+        <ul>
+          <li>Python Full Stack Development Bootcamp in T4TEQ Software Solution at Tiruchirapalli.</li>
+          <li>Concepts : Python, HTML, CSS, JavaScript(JS),[Bootstrap & JQuery] DJango & MongoDB.</li>
+        </ul>
+      </div>
+    </div>
+  </section><br><br>
+
+  <section id="project" class="project-section">
+    <div class="project">
+    <h1>📚 Student Library Management System (Python)</h1>
+    <p>
+      A <strong>menu-driven and beginner-friendly Library Management System</strong> developed using 
+      Python and <strong>Object-Oriented Programming (OOP)</strong>. The project simulates a real-world 
+      student library system, focusing on <em>book management, student records, and borrowing-return workflows</em> 
+      through a user-friendly CLI interface.
+    </p>
+
+    <h2>🎯 Project Goals</h2>
+    <ul>
+      <li>Adds and stores book records.</li>
+      <li>Issues and returns books.</li>
+      <li>Tracks available and borrowed books using only Python’s built-in features.</li>
+    </ul>
+
+    <h2>⚡ Responsibilities & Features</h2>
+    <ul>
+      <li>Developed a CLI-based Library Management System using Python and OOP.</li>
+      <li>Implemented Admin and Student modules with role-based access control.</li>
+      <li>Enabled features like admin login, book addition, book lending, return management, and student authentication.</li>
+      <li>Managed dynamic data using classes, dictionaries, and lists for book and user records.</li>
+      <li>Designed borrow-return logic ensuring one book per student at a time, with availability tracking.</li>
+      <li>Ensured clean code structure, proper input validation, and a smooth user experience.</li>
+    </ul>
+
+    <h2>🛠 Core Python Concepts Used</h2>
+    <ul>
+      <li><strong>Functions</strong> – For reusable operations like <code>add_book()</code>, <code>issue_book()</code>, etc.</li>
+      <li><strong>Lists & Dictionaries</strong> – To store and manage books and student data.</li>
+      <li><strong>Loops and Conditionals</strong> – For control flow and user interaction.</li>
+      <li><strong>Classes</strong> – For modular design (e.g., Library, Book, Student classes).</li>
+      <li><strong>File Handling</strong> – For saving/loading data persistently.</li>
+    </ul>
+  </div>
+  </section><br>
+  <section id="portfolio-project" class="project-section">
+  <div class="project">
+    <h1>🌐 Personal Portfolio Website</h1>
+    <p>
+      A fully responsive and interactive portfolio website developed to showcase my 
+      <strong>skills, projects, and professional journey</strong>. It highlights clean design, 
+      smooth navigation, and modern UI/UX practices, ensuring a professional digital presence.
+    </p>
+
+    <h2>🎯 Project Summary</h2>
+    <p>
+      <strong>Designed and built a personal portfolio website</strong> featuring <em>animated header, 
+      smooth scrolling navigation, interactive profile section, and structured project & experience showcases</em>. 
+      The website demonstrates <strong>front-end development</strong> expertise while maintaining accessibility and clarity.
+    </p>
+
+    <h2>⚡ Responsibilities & Contributions</h2>
+    <ul>
+      <li><strong>Designed & Developed a Responsive Portfolio Website using HTML, CSS, JavaScript & BootStrap,</strong> structured into modular sections (Home, About, Projects, Experience, Contact).</li>
+      <li><strong>Implemented Smooth Scrolling Navigation</strong> with JavaScript to enhance user experience and easy movement across sections.</li>
+      <li><strong>Developed a "Back to Top" Button</strong> with visibility toggle on scroll and smooth scrolling effect for usability.</li>
+      <li><strong>Built an Animated Header Section</strong> with a zoom-in background animation to make the interface visually engaging.</li>
+      <li><strong>Created an Interactive Profile Section</strong> with a professional image, personal branding, and a concise role description.</li>
+      <li><strong>Enhanced UI/UX with CSS Styling</strong> (modern buttons, hover effects, shadows, responsive layouts, rounded sections).</li>
+      <li><strong>Integrated Contact Information</strong> with email, LinkedIn, and personal branding credits for networking and accessibility..</li>
+      <li><strong>Applied Clean Code Practices</strong> ensuring maintainability, readability, and separation of concerns (HTML, CSS, JS files).</li>
+      <li><strong>Designed Structured "About Me" & Education Sections</strong> with clear detailing of academic background and relevant courses.</li>
+    </ul>
+  </div>
+</section><br>
+  <section id="experience" class="experience-section">
+    <div class="experience">
+    <h1>💼 Technical Recruiter – Smart IT Frame LLC</h1>
+    <p class="meta">
+      <!-- Percentage: <span class="highlight">70%</span><br> -->
+      <strong>📍 Tiruchirapalli, India (Onsite) — May 2025 – September 2025</strong>
+    </p>
+
+    <h2>🔹 Key Responsibilities & Achievements</h2>
+    <ul>
+      <li>Recruited for diverse IT roles across the industry, submitting <strong>100+ qualified profiles</strong> to clients and securing interviews for candidates.</li>
+      <li>Submitted <strong>30+ candidate profiles</strong> monthly, arranging interviews for shortlisted candidates, ensuring quality aligned with client requirements.</li>
+      <li>Sourced candidates through <strong>Monster, Dice, LinkedIn, and internal database</strong>, improving talent pipeline efficiency by <strong>35%</strong>.</li>
+      <li>Specialized in <strong>US staffing</strong>, handling requirements on <strong>W2, C2C, and 1099</strong> employment types.</li>
+      <li>Conducted initial screenings and technical assessments to evaluate candidate fit, reducing interview-to-hire ratio.</li>
+      <li>Partnered with hiring managers to understand requirements and develop effective job descriptions.</li>
+      <li>Utilized <strong>Ceipal ATS</strong> to manage candidate records, track submissions, and streamline hiring workflows.</li>
+      <li>Coordinated interviews, negotiated offers, and facilitated smooth onboarding, ensuring <strong>95% candidate retention</strong> in my journey.</li>
+    </ul>
+  </div>
+  </section><br><br>
+
+  <section id="contact" class="contact-section">
+    <footer id="contact">
+    <h2>👋 Let’s Connect!</h2>
+    <p>If you’d like to chat about <span class="highlight">Python, web development</span> or just say hi,  
+       I’d be happy to hear from you.</p>
+    <p>Email me at <a href="mailto:asfar.python@gmail.com" class="highlight">Asfar Raja</a></p>
+    <p>Or reach out on:</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/asfar-raja-rn/">LinkedIn</a>
+    </div>
+    <div class="credits">
+      <p>Made with ❤️ by Asfar Raja | Tiruchirapalli, India</p>
+    </div>
+  </footer> 
+</section>
+<button id="scrollBtn" title="Back to top">⬆</button>
+</body>
+</html>
