@@ -16,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 40px 60px;
-  min-height: 70px;
+  height: 70px;
   background: url('./pexels-njeromin-17720580.jpg') center/cover no-repeat;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   animation: bg-zoom 16s ease-in-out infinite alternate;
@@ -276,5 +276,6 @@ footer .highlight {
     font-size: 14px;
   }
 }
+
 
 
