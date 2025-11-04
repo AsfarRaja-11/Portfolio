@@ -3,23 +3,26 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #f8f9fa;
-  color: #333;
   background: url('./Forest.jpg') no-repeat center center fixed;
+  color: #333;
+  background-size: cover;
   animation: bg-zoom 12s ease-in-out infinite alternate;
-   background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
   position:sticky;
-  top:0px;
+  top: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 60px;
-  height: 70px;
+  padding: 24px 40px;
   background: url('./pexels-njeromin-17720580.jpg') center/cover no-repeat;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   animation: bg-zoom 16s ease-in-out infinite alternate;
+
+ 
 }
 
 @keyframes bg-zoom {
@@ -35,8 +38,8 @@ header {
 }
 
 .profile img {
-  width: 120px;
-  height: 120px;
+  width: clamp(72px, 12vw, 120px); 
+  height: clamp(72px, 12vw, 120px);
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #0078d7;
@@ -46,6 +49,7 @@ header {
 .profile-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .profile-info h1 {
@@ -276,6 +280,3 @@ footer .highlight {
     font-size: 14px;
   }
 }
-
-
-
